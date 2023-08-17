@@ -6,7 +6,7 @@ module.exports = {
     description:
       'My Personal WebSite',
     siteUrl: 'https://temirlan-aidarov.netlify.app/', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    image: '/metaImage.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@temirlanualihanuly',
   },
   plugins: [
