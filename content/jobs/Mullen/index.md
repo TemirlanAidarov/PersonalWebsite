@@ -6,7 +6,7 @@ location: 'Astana Hub'
 range: 'Spring 2021'
 url: 'https://astanahub.com/en/'
 ---
-
+ 
 - Worked with bugs and testing
 - Developed microservices 
 - Developed an SMS Service that is used by 67000 people on a regular basis.
