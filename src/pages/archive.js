@@ -152,82 +152,64 @@ const ArchivePage = ({ location, data }) => {
 
       <main>
         <header ref={revealTitle}>
-          <h1 className="big-heading">Archive</h1>
-          <p className="subtitle">A big list of things I’ve worked on</p>
+          <h1 className="big-heading">Full List</h1>
+          <p className="subtitle">Full list of awards and certificates</p>
         </header>
 
         <StyledTableContainer ref={revealTable}>
           <table>
             <thead>
-              <tr>
-                <th>Year</th>
-                <th>Title</th>
-                <th className="hide-on-mobile">Made at</th>
-                <th className="hide-on-mobile">Built with</th>
-                <th>Link</th>
-              </tr>
+            <tr>
+              <th>Year</th>
+              <th>Title</th>
+              <th className="hide-on-mobile">Made at</th>
+              <th className="hide-on-mobile">Built with</th>
+              <th>Link</th>
+            </tr>
             </thead>
             <tbody>
-              {projects.length > 0 &&
-                projects.map(({ node }, i) => {
-                  const {
-                    date,
-                    github,
-                    external,
-                    ios,
-                    android,
-                    title,
-                    tech,
-                    company,
-                  } = node.frontmatter;
-                  return (
-                    <tr key={i} ref={el => (revealProjects.current[i] = el)}>
-                      <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
+            {projects.length > 0 &&
+              projects.map(({ node }, i) => {
+                const {
+                  date,
+                  external,
+                  ios,
+                  android,
+                  title,
+                  company,
+                } = node.frontmatter;
+                return (
+                  <tr key={i} ref={el => (revealProjects.current[i] = el)}>
+                    <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
 
-                      <td className="title">{title}</td>
+                    <td className="title">{title}</td>
 
-                      <td className="company hide-on-mobile">
-                        {company ? <span>{company}</span> : <span>—</span>}
-                      </td>
+                    <td className="company hide-on-mobile">
+                      {company ? <span>{company}</span> : <span>—</span>}
+                    </td>
 
-                      <td className="tech hide-on-mobile">
-                        {tech?.length > 0 &&
-                          tech.map((item, i) => (
-                            <span key={i}>
-                              {item}
-                              {''}
-                              {i !== tech.length - 1 && <span className="separator">&middot;</span>}
-                            </span>
-                          ))}
-                      </td>
-
-                      <td className="links">
-                        <div>
-                          {external && (
-                            <a href={external} aria-label="External Link">
-                              <Icon name="External" />
-                            </a>
-                          )}
-                          {github && (
-                            <a href={github} aria-label="GitHub Link">
-                              <Icon name="GitHub" />
-                            </a>
-                          )}
-                          {ios && (
-                            <a href={ios} aria-label="Apple App Store Link">
-                              <Icon name="AppStore" />
-                            </a>
-                          )}
-                          {android && (
-                            <a href={android} aria-label="Google Play Store Link">
-                              <Icon name="PlayStore" />
-                            </a>
-                          )}
-                        </div>
-                      </td>
-                    </tr>
-                  );
-                })}
+                    <td className="links">
+                      <div>
+                        {external && (
+                          <a href={external} aria-label="External Link">
+                            <Icon name="External" />
+                          </a>
+                        )}
+                        {ios && (
+                          <a href={ios} aria-label="Apple App Store Link">
+                            <Icon name="AppStore" />
+                          </a>
+                        )}
+                        {android && (
+                          <a href={android} aria-label="Google Play Store Link">
+                            <Icon name="PlayStore" />
+                          </a>
+                        )}
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </StyledTableContainer>
@@ -245,7 +227,7 @@ export default ArchivePage;
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/projects/" } }
+      filter: { fileAbsolutePath: { regex: "/projects/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -253,8 +235,6 @@ export const pageQuery = graphql`
           frontmatter {
             date
             title
-            tech
-            github
             external
             ios
             android

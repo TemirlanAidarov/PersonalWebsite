@@ -32,11 +32,11 @@ const StyledTagsContainer = styled.main`
 `;
 
 const TagsPage = ({
-  data: {
-    allMarkdownRemark: { group },
-  },
-  location,
-}) => (
+                    data: {
+                      allMarkdownRemark: { group },
+                    },
+                    location,
+                  }) => (
   <Layout location={location}>
     <Helmet title="Tags" />
 
