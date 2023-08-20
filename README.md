@@ -1,2 +1,2 @@
-# PersonalWebsite
-Description of my professional skills in aesthetic way 
+# My personal website
+This is my react app that describes my professional skills in aesthetic way 
