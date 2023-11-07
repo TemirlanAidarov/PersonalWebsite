@@ -2,10 +2,10 @@
   "name": "v4",
   "description": "Personal Website V4",
   "version": "1.0.0",
-  "author": "Temirlan Aidarov <temirlan.aidarov@alumni.nu.edu.kz>",
+  "author": "Akbota Toleuzhanova <akbota.amir.01gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TemirlanAidarov"
+    "url": "https://github.com/AkbotaToleuzhanova"
   },
   "keywords": [
     "gatsby"

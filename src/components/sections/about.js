@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'Python'];
+  const skills = ['Graphic Design', 'Logo Design', 'UI/UX', 'Branding'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,19 +135,18 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Temirlan and I have a deep love for coding and a keen eye for design. I became intrigued by web development in 2015 
-              when I chose to experiment with modifying personalized VK conversations. 
-              This experience of modifying pages taught me valuable lessons about HTML &amp; CSS! 
+              Hello, my name is Akbota!
+              Since early childhood, I have always been involved in creative activities.
+              I have tried different forms of art: from singing to the art of coding. Above all, it was graphic design that truly captured my imagination, giving me creative freedom in this new technological era.
+
             </p>
 
             <p>
-              Then I applied to Nazarbayev University to pursue Computer Science major. 
-              Since then, I have turned my hobby into my career. 
+              Combining my passion for design and technology puts me in a unique place in the world of ever-evolving design.
             </p>
 
             <p>
-              I have participated in hackathons and involved in startup projects.
-              Currently I am working with Railgis.kz.
+              I am passionate about helping brands stand out in the digital age. Together we will create a unique product!
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
@@ -162,7 +161,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

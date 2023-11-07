@@ -1,15 +1,12 @@
 ---
 date: '1'
-title: 'Railway Map'
+title: 'RailGis.kz'
 cover: './halcyon.png'
 github: 'http://gitlab.networkenergy.net/dkr_privatevagon/railGis/railgis-back'
 external: 'https://railgis.kz/'
 tech:
-  - React
-  - Tailwind
-  - Leaflet
-  - Spring Boot
-  - GraphHopper
+  - UI/UX design
+  - Logo design
 ---
 
-A digital railway map. This web mapping platform digitizes the entire railway infrastructure of Kazakhstan.
+Design for a cartographic web platform that digitizes the entire railway infrastructure of Kazakhstan. During the process, it was necessary to create a UI/UX design and logo.

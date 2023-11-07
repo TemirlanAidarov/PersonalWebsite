@@ -106,7 +106,7 @@ const Footer = () => {
 
       <StyledCredit tabindex="-1">
 
-          <div>Designed &amp; Built by Temirlan Aidarov</div>
+          <div>Designed by Akbota Toleuzhanova</div>
 
       </StyledCredit>
     </StyledFooter>

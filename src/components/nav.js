@@ -57,7 +57,7 @@ const StyledNav = styled.nav`
   ${({ theme }) => theme.mixins.flexBetween};
   position: relative;
   width: 100%;
-  color: var(--lightest-slate);
+  color: white;
   font-family: var(--font-mono);
   counter-reset: item 0;
   z-index: 12;
@@ -86,6 +86,8 @@ const StyledNav = styled.nav`
         position: relative;
         z-index: 1;
         svg {
+          width: 90px;
+          height: 40px;
           fill: none;
           user-select: none;
           @media (prefers-reduced-motion: no-preference) {
@@ -186,7 +188,6 @@ const Nav = ({ isHome }) => {
       {isHome ? (
         <a href="/" aria-label="home">
           <div className="hex-container">
-            <IconHex />
           </div>
           <div className="logo-container">
             <IconLogo />
@@ -195,7 +196,6 @@ const Nav = ({ isHome }) => {
       ) : (
         <Link to="/" aria-label="home">
           <div className="hex-container">
-            <IconHex />
           </div>
           <div className="logo-container">
             <IconLogo />
@@ -207,7 +207,7 @@ const Nav = ({ isHome }) => {
 
   const ResumeLink = (
     <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      Resume
+      Резюме
     </a>
   );
 

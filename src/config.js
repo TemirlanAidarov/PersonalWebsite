@@ -1,22 +1,18 @@
 module.exports = {
-  email: 'temirlan.aidarov@alumni.nu.edu.kz',
+  email: 'akbota.amir.01gmail.com',
 
   socialMedia: [
     {
-      name: 'GitHub',
-      url: 'https://github.com/TemirlanAidarov',
-    },
-    {
       name: 'Instagram',
-      url: 'https://www.instagram.com/temirlanualihanuly',
+      url: 'https://www.instagram.com/toleuzhanovab',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/temirlan-aidarov-2522b6250/',
+      url: 'https://www.linkedin.com/in/%D0%B0%D2%9B%D0%B1%D0%BE%D1%82%D0%B0-%D1%82%D3%A9%D0%BB%D0%B5%D1%83%D0%B6%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0-a7963126a/',
     },
     {
       name: 'Codepen',
-      url: 'http://gitlab.networkenergy.net/t.aidarov',
+      url: 'https://www.behance.net/akbotatoleuzhan01/moodboards',
     },
   ],
 

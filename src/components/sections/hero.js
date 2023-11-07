@@ -61,18 +61,12 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Temirlan Aidarov.</h2>;
-  const three = <h3 className="big-heading">I am a Frontend Developer</h3>;
+  const two = <h2 className="big-heading">Akbota Toleuzhanova.</h2>;
+  const three = <h3 className="big-heading">I am a Graphic Designer</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible products
-        at{' '}
-        <a href="https://railgis.kz/" target="_blank" rel="noreferrer">
-          Railgis.kz
-        </a>
-        .
+        I enjoy creating meaningful narratives through design and experimenting with new technologies to convey stories.
       </p>
     </>
   );

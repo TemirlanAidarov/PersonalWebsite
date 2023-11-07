@@ -231,7 +231,6 @@ const GlobalStyle = createGlobalStyle`
   svg,
   .gatsby-image-wrapper {
     width: 100%;
-    max-width: 100%;
     vertical-align: middle;
   }
 
