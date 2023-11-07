@@ -2,7 +2,7 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Temirlan Aidarov',
+    title: 'Akbota Toleuzhanova',
     description:
       'My Personal WebSite',
     siteUrl: 'https://temirlan-aidarov.netlify.app/', // No trailing slash allowed!
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Temirlan Aidarov',
-        short_name: 'Temirlan Aidarov',
+        name: 'Akbota Toleuzhanova',
+        short_name: 'Bota',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
